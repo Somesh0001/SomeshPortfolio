@@ -1,16 +1,16 @@
 import React from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Card from "@/components/Card";
-import CodeforcesProfile from "@/public/CodeforcesProfile.png";
-import WebTeamCertificate from "@/public/WebTeamCertificate.jpeg";
-import LeetCodeProfile from "@/public/LeetcodeProfile.png";
-import CodechefProfile from "@/public/CodechefProfile.png";
-import CodeForGood from "@/public/CodeForCood.jpg";
-import PconHackathon from "@/public/PCONHackathon.jpeg";
-const Resume = () => {
+import CodeforcesProfile from "@/public/images/CodeforcesProfile.png";
+import WebTeamCertificate from "@/public/images/WebTeamCertificate.jpeg";
+import LeetCodeProfile from "@/public/images/LeetcodeProfile.png";
+import CodechefProfile from "@/public/images/CodechefProfile.png";
+import CodeForGood from "@/public/images/CodeForCood.jpg";
+import PconHackathon from "@/public/images/PCONHackathon.jpeg";
+const Projects = () => {
   return (
     <main className="py-6 xl:py-8 px-6 xl:px-8 flex flex-col items-center xs:min-w-full">
-      <div className="h-[10rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className="h-fir-content w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className=" text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
           Achievements
         </h1>
@@ -36,7 +36,7 @@ const Resume = () => {
         </div>
       </div>
       <div className="w-full bg-black flex flex-wrap items-center justify-center overflow-hidden rounded-md ">
-        <div className="w-full sm:w-full md:w-1/3 p-2">
+        <div className="w-full sm:w-full md:w-1/2 p-2">
           <Card
             title="NIT Jamshedpur Web Team"
             description="I have been a member of web team of my college, since the first year of my college and have actively participated in adding new functionalities"
@@ -46,7 +46,7 @@ const Resume = () => {
             }
           />
         </div>
-        <div className="w-full sm:w-full md:w-1/3 p-2">
+        <div className="w-full sm:w-full md:w-1/2 p-2">
           <Card
             title="Code for Good"
             description="We participated in the Code for Good hackathon 2024 by JP Morgan and Chase and we won !!"
@@ -56,7 +56,7 @@ const Resume = () => {
             }
           />
         </div>
-        <div className="w-full sm:w-full md:w-1/3 p-2">
+        <div className="w-full sm:w-full md:w-1/2 p-2">
           <Card
             title="PCON Hackathon 2024"
             description="I participated in the first hackathon organised by PCON and I won third prize in that hackathon !!"
@@ -66,7 +66,7 @@ const Resume = () => {
             }
           />
         </div>
-        <div className="w-full sm:w-full md:w-1/3 p-2">
+        <div className="w-full sm:w-full md:w-1/2 p-2">
           <Card
             title="Codeforces"
             description="I solved more than 300 q on CF and highest as Specialist on Codeforces with max rating of 1418"
@@ -74,7 +74,7 @@ const Resume = () => {
             visit={"https://codeforces.com/profile/JaiRaghav"}
           />
         </div>
-        <div className="w-full sm:w-full md:w-1/3 p-2">
+        <div className="w-full sm:w-full md:w-1/2 p-2">
           <Card
             title="Leetcode"
             description="I solved more than 400+ q on Leetcode and also started with contests with a highest rating of 1531 "
@@ -82,7 +82,7 @@ const Resume = () => {
             visit={"https://leetcode.com/u/JaiRaghunandan/"}
           />
         </div>
-        <div className="w-full sm:w-full md:w-1/3 p-2">
+        <div className="w-full sm:w-full md:w-1/2 p-2">
           <Card
             title="Codechef"
             description="I have also started giving contests on Codechef and currently my rating is 1679"
@@ -95,4 +95,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Projects;

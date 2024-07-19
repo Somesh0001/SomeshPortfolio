@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Dp from "@/public/SomeshProfile.jpg";
+import Dp from "@/public/images/SomeshProfile.jpg";
 import { MovingDiv } from "@/components/ui/moving-border";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { MdFileDownload } from "react-icons/md";
 import Sidebar from "@/components/Sidebar";
 export default function Home() {
   return (
@@ -47,7 +47,13 @@ export default function Home() {
 
       <div className="flex flex-col lg:flex-row items-center justify-center w-full">
         <div className="text-6xl md:text-8xl w-full lg:w-1/3 text-center lg:text-left flex md:flex-row items-center justify-evenly sm:flex-col">
-          <Button variant={"outline"} className="">Download CV</Button>
+          {" "}
+          <Button variant={"outline"} className="">
+            Resume
+            <a href="Files/Somesh_Dwivedi_Resume.pdf" download={true}>
+              <MdFileDownload className="mx-2 text-green text-2xl" />
+            </a>
+          </Button>
           <CiLinkedin className="text-4xl text-green-500 " />
           <FaGithub className="text-4xl text-green-500" />
           <BsFacebook className="text-4xl text-green-500" />
@@ -58,14 +64,14 @@ export default function Home() {
       <div className=" flex-row items-center justify-center w-full my-4 lg:my-14 flex ">
         <div className=" w-full  text-center lg:text-left flex md:flex-row items-center justify-evenly xs:flex-col">
           <div className="flex  ">
-            <div className="text-6xl mx-1">12</div>
+            <div className="text-6xl mx-1">6+</div>
             <div className="flex flex-col items-center justify-center">
               <span>Projects</span>
               <span> Completed </span>
             </div>
           </div>
           <div className="flex  ">
-            <div className="text-6xl mx-1">8</div>
+            <div className="text-6xl mx-1">8+</div>
             <div className="flex flex-col items-center justify-center">
               <span>Technologies</span>
               Mastered{" "}
@@ -78,7 +84,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
       </div>
     </main>
   );
