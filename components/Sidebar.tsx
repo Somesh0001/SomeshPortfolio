@@ -75,7 +75,7 @@ export default function Sidebar() {
       </DrawerTrigger>
       <DrawerContent className="h-full">
         <div className="mx-auto w-full h-full flex flex-col items-center justify-evenly text-4xl bg-black">
-          <div className="mx-4 my-4">
+          <div className="mx-4 my-4 text-white-500">
             <Link
               href="/"
               className={`text-${pathName === "/" ? "green" : "white"}-500`}
@@ -83,7 +83,7 @@ export default function Sidebar() {
               Home
             </Link>{" "}
           </div>
-          <div className="mx-4">
+          <div className="mx-4 text-white-500">
             {" "}
             <Link
               href="/projects"
@@ -94,18 +94,18 @@ export default function Sidebar() {
               Projects
             </Link>{" "}
           </div>
-          <div className="mx-4">
+          <div className="mx-4 text-white-500">
             {" "}
             <Link
-              href="/resume"
+              href="/achievements"
               className={`text-${
-                pathName === "/resume" ? "green" : "white"
+                pathName === "/achievements" ? "green" : "white"
               }-500`}
             >
-              Resume
+              Achievements
             </Link>{" "}
           </div>
-          <div className="mx-4">
+          <div className="mx-4 text-white-500">
             {" "}
             <Link
               href="/about"
