@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MinusIcon, PlusIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
   Drawer,
@@ -59,6 +60,12 @@ const data = [
 ];
 
 export default function Sidebar() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+  };
+
   const [goal, setGoal] = React.useState(350);
   const pathName = usePathname();
   function onClick(adjustment: number) {
@@ -66,11 +73,10 @@ export default function Sidebar() {
   }
 
   return (
-    <Drawer>
+    <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
       <DrawerTrigger asChild className="md:hidden">
-        <Button variant="outline">
-          {" "}
-          <GiHamburgerMenu className=" text-4xl" />{" "}
+        <Button variant="outline" onClick={() => setIsDrawerOpen(true)}>
+          <GiHamburgerMenu className="text-4xl" />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="h-full">
@@ -79,47 +85,50 @@ export default function Sidebar() {
             <Link
               href="/"
               className={`text-${pathName === "/" ? "green" : "white"}-500`}
+              onClick={closeDrawer}
             >
               Home
-            </Link>{" "}
+            </Link>
           </div>
           <div className="mx-4 text-white-500">
-            {" "}
             <Link
               href="/projects"
               className={`text-${
                 pathName === "/projects" ? "green" : "white"
               }-500`}
+              onClick={closeDrawer}
             >
               Projects
-            </Link>{" "}
+            </Link>
           </div>
           <div className="mx-4 text-white-500">
-            {" "}
             <Link
               href="/achievements"
               className={`text-${
                 pathName === "/achievements" ? "green" : "white"
               }-500`}
+              onClick={closeDrawer}
             >
               Achievements
-            </Link>{" "}
+            </Link>
           </div>
           <div className="mx-4 text-white-500">
-            {" "}
             <Link
               href="/about"
               className={`text-${
                 pathName === "/about" ? "green" : "white"
               }-500`}
+              onClick={closeDrawer}
             >
               About
-            </Link>{" "}
+            </Link>
           </div>
           <div>
             <DrawerFooter>
               <DrawerClose asChild>
-                <Button variant="outline">Cancel</Button>
+                <Button variant="outline" onClick={closeDrawer}>
+                  Cancel
+                </Button>
               </DrawerClose>
             </DrawerFooter>
           </div>

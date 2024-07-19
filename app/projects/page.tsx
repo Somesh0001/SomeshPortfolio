@@ -10,10 +10,10 @@ const Projects = () => {
   return (
     <main className="py-6 xl:py-8 px-6 xl:px-8 flex flex-col items-center xs:min-w-full">
       <div className="h-fir-content w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className=" text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
+        <h1 className=" xs:text-4xl md:text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
           Projects
         </h1>
-        <div className="w-[40rem] h-40 relative">
+        <div className="xs:w-[20rem] md:w-[40rem] xs:h-20 md:h-40 relative">
           {/* Gradients */}
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
@@ -35,7 +35,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="w-full bg-black flex flex-wrap items-center justify-center overflow-hidden rounded-md ">
-        <div className="w-full sm:w-full md:w-1/2 p-2">
+        <div className="w-full sm:w-full md:w-1/2 md:p-2 ">
           <Card
             title="Official Website of NIT JSR   "
             description="As a part of the official webteam of NIT Jamshedpur , I contribute towards website maintainance by adding regular updates and adding new functionalities "
@@ -61,7 +61,7 @@ const Projects = () => {
           />
         </div>
       </div>
-      <div className="text-4xl text-green-500 ">
+      <div className="text-4xl text-green-500 flex items-center justify-center text-center">
         Some minor projects and more contributions
       </div>
       <div className="w-full bg-black flex flex-wrap items-center justify-center overflow-hidden rounded-md ">
