@@ -20,7 +20,7 @@ export default function Home() {
           <div className="text-2xl mb-4">
             Web Developer & Competitive Programmer
           </div>
-          Hello, I'm <span className="text-green-500">SOMESH DWIVEDI</span>
+          Hello, I am <span className="text-green-500">SOMESH DWIVEDI</span>
         </div>
         <div className="relative w-full lg:w-1/3 flex justify-center mt-8 lg:mt-0">
           <MovingDiv>
