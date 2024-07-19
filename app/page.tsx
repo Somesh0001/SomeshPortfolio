@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import { MdFileDownload } from "react-icons/md";
+import Link from "next/link";
 import Sidebar from "@/components/Sidebar";
 export default function Home() {
   return (
@@ -54,9 +55,15 @@ export default function Home() {
               <MdFileDownload className="mx-2 text-green text-2xl" />
             </a>
           </Button>
-          <CiLinkedin className="text-4xl text-green-500 " />
-          <FaGithub className="text-4xl text-green-500" />
-          <BsFacebook className="text-4xl text-green-500" />
+          <Link
+            href="https://www.linkedin.com/in/somesh-dwivedi-602645248/"
+            target="_blank"
+          >
+            <CiLinkedin className="text-4xl text-green-500 " />
+          </Link>
+          <Link href="https://github.com/Somesh0001" target="_blank">
+            <FaGithub className="text-4xl text-green-500" />
+          </Link>
         </div>
         <div className="relative w-full lg:w-1/3 flex justify-center mt-8 lg:mt-0"></div>
       </div>
