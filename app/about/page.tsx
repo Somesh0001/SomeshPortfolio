@@ -65,11 +65,21 @@ const About = () => {
           <div className="text-4xl text-green-500">Hello !! Somesh here</div>
           <TextGenerateEffect
             words={
-              "As a passionate coding enthusiast from NIT Jamshedpur, I have actively contributed to various projects and organizations, showcasing my skills and dedication. My journey began with the Web Team of NIT Jamshedpur, where I played significant roles in developing and maintaining numerous websites. One of my notable contributions includes the Saajha project for the Jharkhand State Police, where I was instrumental in both frontend and backend development. Additionally, I have been a key player in creating and managing websites for major events such as IEEE conferences, Urja (NIT JSR sports fest), Culfest 2k24, and Ojass 2k24. My commitment to excellence is reflected in my academic performance, with a current CG of 9.63. Beyond my technical expertise, I thrive as an extrovert, enjoying meaningful conversations and building connections with others. This blend of technical proficiency and interpersonal skills defines my approach to every project and collaboration. "
+              "A highly motivated computer science student at NIT Jamshedpur, I possess a strong passion for coding and actively seek opportunities to contribute my skills. My journey began with the NIT Jamshedpur Web Team, where I played a key role in maintaining and enhancing the functionality of the college's official website. This experience ignited my desire to leverage my coding expertise in diverse projects."
+            }
+          />
+          <TextGenerateEffect
+            words={
+              "I have since thrived in various web development endeavors, including the Saajha project for the Jharkhand State Police, where I made significant contributions on both the front-end and back-end aspects. Additionally, I have spearheaded the creation and management of websites for major events like IEEE conferences, Urja (NIT JSR sports fest), Culfest 2k24, and Ojass 2k24. These experiences have not only honed my technical skills but also fostered my enthusiasm for collaborative projects."
+            }
+          />
+          <TextGenerateEffect
+            words={
+              "My commitment to excellence extends beyond coding, as evidenced by my strong academic performance with a current CGPA of 9.63. As an extrovert, I thrive on meaningful interactions and building strong connections with others. This blend of technical proficiency and interpersonal skills allows me to approach every project with collaboration and a desire to learn. I am eager to contribute to future projects and continuously expand my knowledge and experience in the ever-evolving field of computer science. "
             }
           />
           <div className="text-4xl text-green-500 my-4">Contact : </div>
-          <div className="text-3xl ">Phno: +91 9044283186</div>
+          <div className="text-3xl ">Phone no: +91 9044283186</div>
           <div className="text-3xl">Email : sd10072004@gmail.com</div>
         </div>
       </div>
