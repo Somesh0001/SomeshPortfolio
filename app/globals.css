@@ -91,9 +91,9 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border bg-black text-white;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-white;
   }
 }
