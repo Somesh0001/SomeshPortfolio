@@ -6,6 +6,7 @@ import Culfest from "@/public/images/Culfest 2k24.png";
 import Ojass from "@/public/images/Ojass24.png";
 import NITJSRWebTeam from "@/public/images/NITJSR WebTeam.png";
 import Urja from "@/public/images/Urja2k23.png";
+import HealthEase from "@/public/images/healthease.png";
 const Projects = () => {
   return (
     <main className="py-6 xl:py-8 px-6 xl:px-8 flex flex-col items-center xs:min-w-full">
@@ -49,6 +50,14 @@ const Projects = () => {
             description="A crime record maintainance website made for Jharkhand State Police by me and my team under the guidance of Web Team PI Dr. KK Singh "
             imgLink={Saajha.src}
             visit={"https://saajha.vercel.app/"}
+          />
+        </div>
+        <div className="w-full sm:w-full md:w-1/2 p-2">
+          <Card
+            title="HealthEase "
+            description="A website to conveniently book appointments with integrated admin panel , blogs section and a list of doctors  "
+            imgLink={HealthEase.src}
+            visit={"https://healthease-eta.vercel.app/"}
           />
         </div>
 
